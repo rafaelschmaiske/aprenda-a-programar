@@ -5,12 +5,11 @@ let produtos = [produtoA,produtoB,produtoC]
 
 for(let i = 0; i<3 ;i++){
     if(produtos[i].internacional == true){
-        let valor = produtos[i].valor +(produtos[i].valor*0.2)
+        let valor = produtos[i].valor*1.20 
         console.log( "O valor de ",produtos[i].nome, "com imposto de importação é:", valor  )
 } else{
-    let valor1 = produtos[i].valor +(produtos[i].valor*0.12)
-    console.log("O valor de ",produtos[i].nome, "nacional com imposto é:", valor1)
+        let valor1 = produtos[i].valor*1.12 
+        console.log("O valor de ",produtos[i].nome, "nacional com imposto é:", valor1)
 }
-
 
 }
